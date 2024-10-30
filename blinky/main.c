@@ -64,18 +64,16 @@ int main(void)
     uint8_t device_id[] = {6, 5, 7, 9};
  
     while (true) {
-	for (int l = 0; l < LEDS_NUMBER; l ++) {
-		for (int i = 0; i < sizeof(device_id)/sizeof(device_id[0]); i ++) {
-			int blink_count =  device_id[i];
-			for (int b = 0; b < blink_count; b++) {
-				bsp_board_led_invert(l);
-		 		nrf_delay_ms(500);
-				bsp_board_led_invert(l);
-				nrf_delay_ms(500);
-			}
-			nrf_delay_ms(5000);
+	for (int i = 0; i < sizeof(device_id)/sizeof(device_id[0]); i ++) {
+		int blink_count =  device_id[i];
+		for (int b = 0; b < blink_count; b++) {
+			bsp_board_led_invert(i);
+		 	nrf_delay_ms(500);
+			bsp_board_led_invert(i);
+			nrf_delay_ms(500);
 		}
-    	}
+		nrf_delay_ms(2500);
+	}
     }
 }
 
