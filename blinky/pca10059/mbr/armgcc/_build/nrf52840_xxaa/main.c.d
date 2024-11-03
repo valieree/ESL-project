@@ -55,9 +55,7 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
  /home/user/esl-nsdk/components/libraries/util/sdk_errors.h \
  /home/user/esl-nsdk/components/libraries/util/sdk_resources.h \
  /home/user/esl-nsdk/modules/nrfx/drivers/nrfx_errors.h \
- /home/user/esl-nsdk/components/boards/boards.h \
- /home/user/esl-nsdk/modules/nrfx/hal/nrf_gpio.h \
- /home/user/esl-nsdk/components/boards/pca10059.h
+ /home/user/esl-nsdk/modules/nrfx/hal/nrf_gpio.h
 
 /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h:
 
@@ -187,8 +185,4 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
 
 /home/user/esl-nsdk/modules/nrfx/drivers/nrfx_errors.h:
 
-/home/user/esl-nsdk/components/boards/boards.h:
-
 /home/user/esl-nsdk/modules/nrfx/hal/nrf_gpio.h:
-
-/home/user/esl-nsdk/components/boards/pca10059.h:
